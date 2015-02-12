@@ -19,6 +19,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
+			<?php //query_posts($query_string . '&meta_key=Likes minus dislikes&orderby=meta_value&order=DESC'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
