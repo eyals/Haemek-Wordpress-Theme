@@ -21,6 +21,20 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+
+			<?php
+			if (is_category()){
+				$this_cat = get_category($cat);
+				if(get_category_children($this_cat->cat_ID) != ""){
+					echo '<div id="subcategories">';
+					echo '<b>יותר מדויק:</b>';
+					wp_list_categories('depth=1&hide_empty=1&optioncount=1&title_li=&sort_column=count&order=desc&child_of='.$this_cat->cat_ID);
+					echo '</div>';
+
+				}
+			}
+			?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

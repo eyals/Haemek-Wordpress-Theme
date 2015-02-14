@@ -10,24 +10,11 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'haemek' ); ?></h1>
+		<h1 class="page-title">אין פוסטים בקטגוריה זו</h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'haemek' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
-
-		<?php elseif ( is_search() ) : ?>
-
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'haemek' ); ?></p>
-			<?php get_search_form(); ?>
-
-		<?php else : ?>
-
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'haemek' ); ?></p>
-			<?php get_search_form(); ?>
-
-		<?php endif; ?>
+			<p>זה בטח רמז - הגיע הזמן לכתוב את הפוסט הראשון שלך.</p>
+			<p><a href="/new-post">לכתיבת פוסט חדש</a></p>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

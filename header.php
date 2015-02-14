@@ -14,23 +14,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header id="masthead" class="site-header">
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		<?php if ( is_user_logged_in() ) {
-				$current_user = wp_get_current_user();
-				echo get_avatar( $current_user->ID, 24 );
-				echo $current_user->display_name;
-				echo "<a href='".wp_logout_url(get_permalink())."'>יציאה</a>";
-			}else{
-				jfb_output_facebook_btn();
-			} ?>
-	</nav><!-- #site-navigation -->
-</header><!-- #masthead -->
 
 <div id="page">
 

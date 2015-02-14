@@ -13,9 +13,7 @@ Haemek is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic,
 */
 @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
-/*--------------------------------------------------------------
-CUSTOM
---------------------------------------------------------------*/
+
 html, input{
 	font-family: "Alef Hebrew",arial,sans-serif;
 }
@@ -36,6 +34,28 @@ a{
 	color:#2679D9;
 	text-decoration:none;
 }
+a:hover{
+	color:#0154B4;
+}
+h1{
+	font-size:50px;
+	font-weight:normal;
+	margin:0 0 10px 0;
+	letter-spacing: -1px;
+	line-height:90%;
+}
+
+p{
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+.avatar{
+	vertical-align: middle;
+	border-radius:100px;
+	border:1px solid #cccccc;
+}
+
 /*--------------------------------------------------------------
 Layout
 --------------------------------------------------------------*/
@@ -50,6 +70,7 @@ Layout
 	position:absolute;
 	right:0;
 	top:0;
+	height:100%;
 }
 
 
@@ -84,18 +105,61 @@ Layout
 }
 
 
+.cat_path{
+	margin-bottom:10px;
+}
+
 /*--------------------------------------------------------------
 Sidebar
 --------------------------------------------------------------*/
 #secondary #logo-haemek{
 	width:100%;
+	margin-bottom:30px;
 }
-#secondary .search-field{
-	width:100%;
+
+
+
+#userbox{
+	padding:10px;
+	background:#eee;
+	margin-bottom:30px;
+	border-radius:5px;
+	text-align: center;
+	line-height:110%;
+}
+
+#userbox ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+#userbox li{
+	display: inline-block;
+	text-align:center;
+	line-height:100%;
+	margin:2px;
+	border-radius:5px;
+	padding:5px;
+	background:#2679D9;
+}
+#userbox li:hover{
+	background:#0154B4;
+}
+#userbox li a{
+	color:white;
+}
+
+
+#search_form{
+	margin-bottom:30px;
 }
 
 #search_form .screen-reader-text, #search_form .search-submit{
 	display:none;
+}
+#search_form .search-field{
+	width:100%;
+	font-size:20px;
 }
 
 
@@ -106,13 +170,20 @@ Sidebar
 	margin:0;
 	padding:0;
 	list-style-type: none;
-	font-size:24px;
+	font-size:12px;
 	margin-bottom: 20px;
+	color:#999999;
 	/*border-top:1px solid #cccccc;*/
 }
+#categories_nav li a{
+	font-size:24px;
+}
+
 #categories_nav li li{
-	font-size:16px;
 	margin-bottom:0;
+}
+#categories_nav li li a{
+	font-size:16px;
 }
 #categories_nav ul{
 	margin:0;
@@ -129,27 +200,167 @@ article{
 	border-top:1px solid #cccccc;
 	color: #444444;
 	margin-bottom:20px;
+	margin-top:20px;
 	position:relative;
+	clear: both;
 }
-article h1{
-	letter-spacing:0px;
-	margin:0px;
+.single article{
+	border-top:none;
+	padding-top:10px;
 }
+article h2.entry-title{
+	font-size:35px;
+	font-weight:normal;
+	margin:0;
+	margin-top:-10px;
+}
+article .entry-content h2{
+	font-size:20px;
+	margin:20px 0 10px 0;
+	line-height:0%;
+}
+article h3{
+	font-size:18px;
+	margin-bottom: 0;
+}
+
 article .entry-meta{
 	font-size:12px;
 	color:#666666;
 	margin-top:10px;
 }
-article .entry-meta .avatar{
-	vertical-align: middle;
-	border-radius:100px;
-	border:1px solid #cccccc;
-}
 article p{
 	margin-top:0;
 }
-article .like-button{
+article .post-actions{
 	position:absolute;
 	left:0;
+	top:13px;
+	font-size:18px;
+}
+article .post-actions .wpfp-span a{
+	color:orange;
+}
+
+article .wp-post-image{
+	float:right;
+	margin:0 0px 15px 15px;
+	border-radius:10px;
+}
+
+#subcategories li{
+	margin:0;
+	display: inline-block;
+	list-style-type: none;
+	margin-right:10px;
+}
+
+.post-navigation{
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+Comments
+--------------------------------------------------------------*/
+#comments{
+	clear:both;
+}
+#comments h2{
+	margin:0;
+}
+#comment_box{
+	background:#eee;
+	padding:5px 50px 10px 15px;
+	border-radius:5px;
+}
+#comment_box .user_avatar_link{
+	display:block;
+	margin-bottom:-5px;
+	margin-right:-40px;
+}
+#commentform #comment{
+	display:block;
+	width:100%;
+	font-size:16px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+#comment_box h3{
+	display: none;
+}
+#comment_box .form-submit{
+	margin:0;
+}
+.comment-list{
+	margin-top:10px;
+}
+.comment{
+	padding-right:10px;
+}
+.comment.depth-2{
+	padding-right:40px;
+}
+.comment-body{
+	padding:15px 0 0 0;
+	margin:0;
+}
+
+
+.comment-content{
+	padding-right:40px;
+	margin-top:-8px;
+}
+.comment-metadata{
+
+	font-size:12px;
+	display:inline-block;
+}
+.comment .comment-author{
+	display: inline-block;
+}
+.comment .says{
+	display:none;
+}
+.comment .reply{
+	text-align:left;
+}
+.comment .likebtn_container{
+	left:0;
+	top:15px;
+}
+/*--------------------------------------------------------------
+WP User Frontend (editor)
+--------------------------------------------------------------*/
+.wpuf-post-form label{
+	float:right;
+}
+.wpuf-post-form .category-wrap{
+	float:right !important;
+}
+.wpuf-post-form input[type=text]{
+	width:75%;
+}
+.wpuf-post-form .wpuf-richtext{
+	width:100%;
+}
+
+article .likebtn_container{
+	display: inline-block;
+	position:absolute;
 	top:10px;
+	left:40px;
+}
+
+
+/*--------------------------------------------------------------
+Like buttons
+--------------------------------------------------------------*/
+
+.likebtn-wrapper{
+	direction:rtl !important;
+}
+
+.likebtn-wrapper .lb-tt{ /*Tooltip*/
+	visibility:hidden;
 }

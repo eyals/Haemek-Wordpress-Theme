@@ -8,6 +8,28 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+
+add_theme_support( 'post-thumbnails' );
+
+function haemek_favorites_btn(){
+	if ( is_user_logged_in() ) {
+		if (function_exists('wpfp_link')) {
+			wpfp_link();
+		}
+	}
+}
+
+function haemek_user_avatar_link(){
+	$u = wp_get_current_user();
+	echo "<span class='user_avatar_link'>";
+	echo get_avatar( $u->ID, 36);
+	echo " ";
+	//the_author_posts_link();
+	echo $u->display_name;
+	echo "</span>";
+}
+
+
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }

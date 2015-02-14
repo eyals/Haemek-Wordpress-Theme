@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
+msgid "אופס. הדף הזה לא קיים."
 msgstr ""
 
 #: 404.php:19
@@ -21,7 +21,7 @@ msgid "It looks like nothing was found at this location. Maybe try one of the li
 msgstr ""
 
 #: 404.php:27
-msgid "Most Used Categories"
+msgid "הקטגוריות הפעילות ביותר"
 msgstr ""
 
 #. translators: %1$s: smiley
@@ -31,7 +31,7 @@ msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
 #: comments.php:28
-msgctxt "comments title"
+msgctxt "כותרת התגובה"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
@@ -42,27 +42,27 @@ msgid "Comment navigation"
 msgstr ""
 
 #: comments.php:36 comments.php:53
-msgid "&larr; Older Comments"
+msgid "&larr; תגובות ישנות יותר"
 msgstr ""
 
 #: comments.php:37 comments.php:54
-msgid "Newer Comments &rarr;"
+msgid "תגובות חדשות יותר &rarr;"
 msgstr ""
 
 #: comments.php:64
-msgid "Comments are closed."
+msgid "התגובות נעולות."
 msgstr ""
 
 #: content-none.php:13
-msgid "Nothing Found"
+msgid "לא נמצא"
 msgstr ""
 
 #: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "מוכנ/ה לפרסם את הפוסט הראשון? <a href=\"%1$s\">להתחיל כאן</a>."
 msgstr ""
 
 #: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid "סליחה - לא נמצאו תוצאות לחיפוש שלך. נסי לחפש ביטוי אחר."
 msgstr ""
 
 #: content-none.php:28
@@ -70,17 +70,17 @@ msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searc
 msgstr ""
 
 #: content-page.php:18 content-single.php:20 content.php:29
-msgid "Pages:"
+msgid "דפים:"
 msgstr ""
 
 #: content-page.php:25 inc/template-tags.php:126
-msgid "Edit"
+msgid "עריכה"
 msgstr ""
 
 #. translators: %s: Name of current post
 
 #: content.php:22
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgid "להמשיך לקרוא %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: footer.php:15
@@ -104,37 +104,37 @@ msgid "Sidebar"
 msgstr ""
 
 #: header.php:22
-msgid "Skip to content"
+msgid "לדלג לתוכן"
 msgstr ""
 
 #: inc/extras.php:64
-msgid "Page %s"
+msgid "עמוד %s"
 msgstr ""
 
 #: inc/template-tags.php:23
-msgid "Posts navigation"
+msgid "ניווט פוסטים"
 msgstr ""
 
 #: inc/template-tags.php:27
-msgid "Older posts"
+msgid "פוסטים קודמים"
 msgstr ""
 
 #: inc/template-tags.php:31
-msgid "Newer posts"
+msgid "פוסטים הבאים"
 msgstr ""
 
 #: inc/template-tags.php:56
-msgid "Post navigation"
+msgid "ניווט פוסט"
 msgstr ""
 
 #: inc/template-tags.php:86
-msgctxt "post date"
-msgid "Posted on %s"
+msgctxt "תאריך הפובט"
+msgid "פורסם ב-%s"
 msgstr ""
 
 #: inc/template-tags.php:91
-msgctxt "post author"
-msgid "by %s"
+msgctxt "כותב הפוסט"
+msgid "ע&quot;י %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
@@ -143,39 +143,39 @@ msgid ", "
 msgstr ""
 
 #: inc/template-tags.php:110
-msgid "Posted in %1$s"
+msgid "קטגוריה: %1$s"
 msgstr ""
 
 #: inc/template-tags.php:116
-msgid "Tagged %1$s"
+msgid "תגיות: %1$s"
 msgstr ""
 
 #: inc/template-tags.php:122
-msgid "Leave a comment"
+msgid "כתוב תגובה"
 msgstr ""
 
 #: inc/template-tags.php:122
-msgid "1 Comment"
+msgid "תגובה אחת"
 msgstr ""
 
 #: inc/template-tags.php:122
-msgid "% Comments"
+msgid "% תגובות"
 msgstr ""
 
 #: inc/template-tags.php:143
-msgid "Category: %s"
+msgid "קטגוריה: %s"
 msgstr ""
 
 #: inc/template-tags.php:145
-msgid "Tag: %s"
+msgid "תגית: %s"
 msgstr ""
 
 #: inc/template-tags.php:147
-msgid "Author: %s"
+msgid "כותב: %s"
 msgstr ""
 
 #: inc/template-tags.php:149
-msgid "Year: %s"
+msgid "שנה: %s"
 msgstr ""
 
 #: inc/template-tags.php:149
@@ -184,7 +184,7 @@ msgid "Y"
 msgstr ""
 
 #: inc/template-tags.php:151
-msgid "Month: %s"
+msgid "חודש: %s"
 msgstr ""
 
 #: inc/template-tags.php:151
@@ -193,7 +193,7 @@ msgid "F Y"
 msgstr ""
 
 #: inc/template-tags.php:153
-msgid "Day: %s"
+msgid "יום: %s"
 msgstr ""
 
 #: inc/template-tags.php:153
@@ -208,46 +208,46 @@ msgstr ""
 
 #: inc/template-tags.php:157
 msgctxt "post format archive title"
-msgid "Galleries"
+msgid "גלריות"
 msgstr ""
 
 #: inc/template-tags.php:159
 msgctxt "post format archive title"
-msgid "Images"
+msgid "תמונות"
 msgstr ""
 
 #: inc/template-tags.php:161
 msgctxt "post format archive title"
-msgid "Videos"
+msgid "וידאו"
 msgstr ""
 
 #: inc/template-tags.php:163
 msgctxt "post format archive title"
-msgid "Quotes"
+msgid "ציטוטים"
 msgstr ""
 
 #: inc/template-tags.php:165
 msgctxt "post format archive title"
-msgid "Links"
+msgid "קישורים"
 msgstr ""
 
 #: inc/template-tags.php:167
 msgctxt "post format archive title"
-msgid "Statuses"
+msgid "סטטוסים"
 msgstr ""
 
 #: inc/template-tags.php:169
 msgctxt "post format archive title"
-msgid "Audio"
+msgid "אודיו"
 msgstr ""
 
 #: inc/template-tags.php:171
 msgctxt "post format archive title"
-msgid "Chats"
+msgid "דיונים"
 msgstr ""
 
 #: inc/template-tags.php:173
-msgid "Archives: %s"
+msgid "ארכיון: %s"
 msgstr ""
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
@@ -257,7 +257,7 @@ msgid "%1$s: %2$s"
 msgstr ""
 
 #: inc/template-tags.php:179
-msgid "Archives"
+msgid "ארכיונים"
 msgstr ""
 
 #: search.php:16
